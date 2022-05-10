@@ -1,91 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.container {
+    max-width: 89%;
+}
+
+.header_logo {
+    width: 150px;
+}
+
+img {
+    max-width: 100%;
+}
+
 .navbar-nav .nav-link {
     color: #000;
     font-size: 13px;
-    font-weight: 500;
 }
 
 .navbar-nav .nav-item {
     margin-right: 15px;
+    position: relative;
+}
+
+.index_main_section {
+    background-image: url('./images/index_home.png');
+    background-size: cover;
+    padding: 0 30px;
+}
+
+.section1_text {
+    padding: 30px;
 }
 
 .section1_text h1 {
     font-size: 130px;
     letter-spacing: 3px;
     margin: 0;
+    font-weight: 400;
     margin-top: -10px;
-    /* background: -webkit-linear-gradient(left, rgb(25, 142, 163), rgb(233, 30, 219), rgb(245, 80, 9));
+    background: -webkit-linear-gradient(left, #46a6dd, #987fba, #f15a24);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
 }
 
 .section1_text p {
     margin: 37px 0 0 0;
-    font-size: 21px;
-    width: 70%;
+    font-size: 24px;
+    width: 85%;
     font-weight: 500;
 }
 
-.home_btn, .contractor_btn, .learn_btn {
+.home_btn,
+.contractor_btn,
+.learn_btn,
+.purple_learn_btn {
     border: none;
     background-color: #00bbff;
     color: #fff;
     border-radius: 20px;
-    padding: 4px 25px;
+    padding: 3px 25px 5px 25px;
     margin-top: 15px;
-    font-size: 19px;
+    font-size: 22px;
     margin-right: 10px;
 }
 
-.contractor_btn{
+.home_btn a{
+    color: #fff !important;
+}
+
+.contractor_btn a{
+    color: #fff;
+}
+
+.contractor_btn {
     background-color: #ff6200;
 }
 
-.learn_btn{
+
+.learn_btn {
     background-color: red;
+    margin-bottom: 25px;
+}
+
+.purple_learn_btn {
+    background-color: rgb(215, 6, 252);
     margin-bottom: 25px;
 }
 
 /* -------------------------homeowner------------------- */
 
-.home_section1, .contractor_section1, .contact_section1{
+li.nav-item{
+    font-weight: 700;
+}
+
+li.nav-item.active {
+    font-weight: bold;
+}
+
+li.nav-item.active::after {
+    content: '';
+    background-color: #000;
+    height: 2px;
+    width: 35px;
+    color: #000;
+    position: absolute;
+    left: 9px;
+}
+
+.home_section1,
+.contractor_section1,
+.contact_section1 {
     padding: 0 0 0 45px;
 }
 
+.home_main{
+    background-color: #F6F6F6;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+
+.home_section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .home_section1 h1 {
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 400;
+    color: #000;
 }
 
-.home_section1 p{
-    font-size: 20px;
-    font-weight: 500;
+.home_section1 p {
+    font-size: 25px;
     margin-top: 25px;
+    color: #000;
 }
 
-.head_line, .red_head_line{
+.head_line,
+.red_head_line {
     height: 2px;
     background-color: rgb(42, 190, 235);
-    width: 22%;
+    width: 25%;
     margin-top: 30px;
 }
-.head_line2, .red_head_line2{
+
+.head_line2,
+.red_head_line2, .white_head_line {
     height: 2px;
     background-color: rgb(42, 190, 235);
     width: 10%;
     margin-top: 30px;
 }
 
-.red_head_line, .red_head_line2{
+.white_head_line{
+    background-color: #fff;
+}
+
+.red_head_line,
+.red_head_line2 {
     background-color: red;
     margin-bottom: 30px;
     margin-top: 36px;
 }
 
-.home_section2 h5{
-    margin: 20px 0 40px 0;
-    line-height: 32px;
+.home_section2{
+    margin-top: 30px;
+    padding-left: 30px;
 }
 
-.started_btn{
+.home_section2 h1{
+    font-size: 55px;
+    color: #000;
+}
+
+.home_section2 h5 {
+    margin: 20px 0 40px 0;
+    line-height: 40px;
+    font-size: 25px;
+    color: #000;
+}
+
+.started_btn {
     background: transparent;
     border: 2px solid #000;
     color: #000;
@@ -93,52 +195,69 @@
     margin: 30px 0;
     padding: 4px 25px;
     font-weight: 500;
+    font-size: 18px;
 }
 
-.process_section{
-    padding: 30px;
+.process_section {
+    padding: 50px;
+    margin: 30px 0;
 }
 
-.process_section h1{
+.process_section h1 {
     font-size: 50px;
+    font-weight: 600;
 }
 
-.process_row{
+.process_row {
     padding: 14px;
 }
 
-.process_row h2{
-    font-size: 28px;
-    color: #00c3e8;
+.process_row h2 {
+    font-size: 25px;
+    color: #23a5ec;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
-.process_row p{
+.process_row p {
     font-size: 21px;
+    color: #000;
 }
 
-.estimate_annual{
-    padding: 30px;
+.process_row img {
+    width: 150px;
+    margin-bottom: 40px;
 }
 
-.estimate_annual h1{
-    font-size: 56px;
+.estimate_annual {
+    padding: 60px 0 60px 45px;
+    background-color: #F6F6F6;
 }
 
-footer{
+.estimate_annual h1 {
+    font-size: 60px;
+    color: #000;
+}
+
+footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 40px 50px;
     background-color: #000;
     color: #fff;
 }
 
-footer ul{
+footer img{
+    width: 175px;
+    margin-bottom: 15px;
+}
+
+footer ul {
     list-style-type: none;
 }
 
-footer ul li{
-    font-size: 13px;
+footer ul li {
+    font-size: 14px;
     line-height: 24px;
 }
 
@@ -151,77 +270,429 @@ footer ul li{
 
 /* -------------------------------------------------------- */
 
+.contractor_section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.contractor_section1 h1{
-    font-size: 50px;
+.contractor_section1 h1 {
+    font-size: 55px;
+    color: #000;
+    font-weight: 600;
+}
+
+.contractor_section1 p {
+    font-size: 25px;
     color: #000;
 }
 
-.contractor_section1 p{
-    font-size: 25px;
+.standOut_div {
+    padding: 70px 50px;
+    background-color: #F6F5F3;
 }
 
-.standOut_div{
-    padding: 0 0 0 45px;
+.standOut_div h1{
+    font-size: 55px;
+    color: #000;
+    font-weight: 600;
 }
 
 
-.stand_row{
+.stand_row {
     padding: 55px;
 }
 
-.stand_row h2{
-    font-size: 28px;
-    color: red;
-    margin-bottom: 20px;
+.stand_row img{
+    width: 150px;
+    margin-bottom: 40px;
 }
 
-.stand_row p{
-    font-size: 21px;
+.stand_row h2 {
+    font-size: 26px;
+    color: red;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.stand_row p {
+    font-size: 20px;
+    color: #000;
     width: 80%;
 }
 
-.contractor_section3 h1{
-    font-size: 50px;
-    color: #000;
+.contractor_section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
 }
 
-.contractor_section3 p{
+.contractor_section3 h1 {
+    font-size: 60px;
+    color: #000;
+    font-weight: 600;
+}
+
+.contractor_section3 p {
     font-size: 25px;
+    color: #000;
+    margin-bottom: 25px;
 }
 
 /* ----------------------------contact----------------- */
 
-.contact_section1 h1{
-    font-size: 60px;
+.contact_section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact_section1 h1 {
+    font-size: 61px;
     color: #000;
 }
 
-.contact_section1 p, .refrigerant_section p{
-    font-size: 25px;
-    /* font-weight: 500; */
+.contact_section1 p,
+.refrigerant_section p {
+    font-size: 27px;
     color: #000;
 }
-.contact_section2{
-    padding: 0 0 0 45px;
+
+
+.contact_section2 {
+    padding: 60px;
+    background-color: #F6F6F6;
 }
 
-.refrigerant_section h1{
+.contact_section2 h1{
     font-size: 50px;
+    color: #000;
+}
+
+.contact2_img{
+    text-align: center;
+}
+.contact2_img img{
+    width: 75%;
+}
+
+.refrigerant_section h1 {
+    font-size: 60px;
     color: #000;
 }
 
 .refrigerant_section {
     padding: 50px;
     line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.refrigerant_section p {
+    font-size: 27px;
+    color: #000;
+    line-height: 45px;
+    padding: 15px;
 }
 
 
-.heat_pump_section{
-    padding: 0 0 0 45px;
+.heat_pump_section {
+    background-color: #F6F6F6;
+    padding: 80px 45px;
 }
 
-.heat_pump_section h1{
-    font-size: 45px;
+.heat_pump_section img{
+    width: 80%;
+}
+
+.heat_pump_section h1 {
+    font-size: 55px;
     color: #000 !important;
+    font-weight: 600;
+}
+
+.air_condition {
+    margin: 20px 0;
+    padding: 0 50px;
+}
+.air_condition img{
+    width: 170px;
+    margin-bottom: 50px;
+}
+
+.air_condition p {
+    font-size: 21px;
+    color: #000;
+}
+
+.air_condition h3 {
+    color: red;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+.purple_head_line {
+    height: 2px;
+    background-color: rgb(215, 6, 252);
+    width: 22%;
+    margin: 30px 0;
+}
+
+.about_section2{
+    background-color: #F6F6F6;
+    padding-bottom: 100px;
+}
+
+.stay_connected_div{
+    background-image: linear-gradient(45deg, #0ba1f7 , #926bc9, red);
+    padding: 90px;
+}
+
+.stay_connected_div h1{
+    color: #000;
+    font-size: 50px;
+}
+
+.email_div{
+    margin: 100px 0 50px 0;
+}
+
+.email_desc h3 {
+    font-size: 25px;
+    color: #000;
+    font-weight: 600;
+}
+
+.email_desc h4{
+    color: #fff;
+    font-size: 22px;
+}
+
+.margin_setting1{
+    margin-top: 2vw !important;
+}
+.margin_setting2{
+    margin-top: 7vw !important;
+}
+.margin_setting3{
+    margin-top: 9vw !important;
+}
+
+.email_section_div{
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .section1_text h1 {
+        font-size: 46px;
+        font-weight: 800;
+    }
+
+    .section1_text p {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .home_btn, .contractor_btn{
+        width: 90%;
+    }
+
+    .index_main_section{
+        padding: 20px;
+    }
+
+    .home_section1 h1 {
+        font-size: 32px;
+    }
+
+    .home_section1 p {
+        font-size: 20px;
+    }
+
+    .home_section1{
+        padding: 10px;
+    }
+
+    .home_section1_btn_div{
+        text-align: center;
+    }
+
+    .home_section2_row{
+        flex-direction: column-reverse;
+    }
+
+    .home_section2 h1 {
+        font-size: 42px;
+    }
+    .home_section2 h5 {
+        font-size: 20px;
+    }
+    
+    .started_btn{
+        margin: 0;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .process_section h1{
+        font-size: 40px;
+    }
+
+    .head_line2{
+        width: 30%;
+    }
+    
+    .process_row{
+        padding: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .estimate_annual h1 {
+        font-size: 30px;
+    }
+
+    .contractor_section1 h1 {
+        font-size: 40px;
+    }
+
+    .contractor_section1 p{
+        font-size: 20px;
+    }
+
+    .learn_btn {
+        background-color: red;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .standOut_div h1 {
+        font-size: 35px;
+    }
+
+    .stand_row {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .stand_row p{
+        width: 100%;
+    }
+
+    .contractor_section3 h1 {
+        font-size: 40px;
+        margin-top: 35px;
+    }
+
+    .contractor_section3 p {
+        font-size: 20px;
+    }
+
+    .contact_section1 h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+     .contact_section1 {
+        padding: 20px;
+    }
+
+    .contact_section1 p {
+        font-size: 20px;
+    }
+    
+    .purple_learn_btn{
+        width: 100%;
+    }
+
+    .stay_connected_div h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .white_head_line {
+        width: 30%;
+    }
+
+    .stay_connected_div {
+        padding: 30px;
+    }
+
+    .email_section_div {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .red_head_line2 {
+        background-color: red;
+        margin-bottom: 30px;
+        margin-top: 36px;
+        width: 30%;
+    }
+
+    .contact2_img img {
+        width: 100%;
+    }
+
+    .contact_section2 {
+        padding: 20px;
+    }
+
+    .margin_setting1 {
+        margin-top: 12vw !important;
+    }
+
+    .refrigerant_section h1 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .refrigerant_section p {
+        font-size: 20px;
+        color: #000;
+        line-height: 2;
+        padding: 0;
+    }
+
+    .heat_pump_section h1 {
+        font-size: 40px;
+    }
+
+    .heat_pump_section img {
+        width: 100%;
+    }
+
+    .heat_pump_section {
+        padding: 70px 20px;
+    }
+
+    .air_condition {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 10px;
+        background-color: #000;
+        color: #fff;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+
+    i.fa-solid.fa-bars {
+        font-size: 30px;
+    }
+
+    .navbar-collapse {
+        padding: 25px 0;
+    }
 }

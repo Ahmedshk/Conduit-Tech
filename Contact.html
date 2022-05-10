@@ -14,31 +14,31 @@
 
 <body>
 
-    <!-- -------------------------navbar---------------------------------- -->
-    <nav class="navbar navbar-expand-lg" style="margin: 30px;">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./HomeOwner.html">HOMEOWNERS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Contractor.html">CONTRACTORS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- -------------------------navbar---------------------------------- -->
+   <!-- -------------------------navbar---------------------------------- -->
+   <nav class="navbar navbar-expand-lg" style="margin: 30px;">
+    <a class="navbar-brand" href="index.html"><img src="./images/header-logo.png" class="header_logo" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./HomeOwner.html">HOMEOWNERS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Contractor.html">CONTRACTORS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html">ABOUT</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./Contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- -------------------------navbar---------------------------------- -->
 
     <!-- --------------------------section 1----------------------------- -->
     <div class="container-fluid">
@@ -54,32 +54,36 @@
                 </div>
 
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6 p-0">
+                <img src="./images/pump_img.jpg" />
+            </div>
         </div>
     </div>
 
     <!-- -----------------------section2--------------------------------  -->
-    <div class="contact_section2"> 
+    <div class="contact_section2">
         <h1>Title here</h1>
         <div class="red_head_line2"></div>
 
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7"></div>
+                <div class="col-md-7 contact2_img">
+                    <img src="./images/contact_section2.png" />
+                </div>
 
                 <div class="col-md-5">
-                    <div class="my-5">
+                    <div class="my-5 margin_setting1">
                         <h2>Enhance your <strong> home comfort </strong> <br />
                             – year round</h2>
                     </div>
-                    <div class="my-5">
+                    <div class="my-5 margin_setting2">
                         <h2>Save energy with a system <br />
                             <strong> 3x as efficient </strong>
                         </h2>
                     </div>
 
-                    <div class="my-5">
+                    <div class="my-5 margin_setting3">
                         <h2>Clean and <strong> environmentally
                                 <br /> friendly </strong> </h2>
                     </div>
@@ -92,7 +96,9 @@
     <!-- --------------------------section 3----------------------------- -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6"></div>
+            <div class="col-md-6 p-0">
+                <img src="./images/ac_outer.jpg" />
+            </div>
             <div class="col-md-6 refrigerant_section">
                 <h1> The Refrigerant Cycle </h1>
 
@@ -105,8 +111,8 @@
                     state of the refrigerant from liquid to gas, as it
                     absorbs heat. In heating mode, a refrigeration
                     cycle pumps heat from a low-temperature level
-                    to a higher one. 
-                    </p>
+                    to a higher one.
+                </p>
                 <div>
                     <button class="learn_btn">Learn more</button>
                 </div>
@@ -119,12 +125,49 @@
         <h1>Heat pumps in action </h1>
         <div class="red_head_line2"></div>
 
+        <div class="text-center">
+            <img src="./images/heat_pump_img.png" />
+        </div>
+        
     </div>
 
+    <!-- ----------------------------------section5----------------------------- -->
+
+    <div class="container my-5">
+        <div class="row justify-content-between">
+            <div class="col-md-6 air_condition">
+                <img src="./images/air_condition.png" />
+                <h3>AIRCONDITIONING</h3>
+                <p>For heat pumps in air conditioning mode, electricity is used
+                    to change the pressure of the refrigerant to absorb heat. </p>
+                <br />
+                <p>At low pressures, the refrigerant absorbs heat available in
+                    the air and evaporates from a liquid to a gas. At high
+                    pressures, a gas refrigerant is higher energy than the
+                    outside air, so it passes heat to the surrounding air and the
+                    refrigerant condenses back to a liquid when it cools. </p>
+            </div>
+            <div class="col-md-6 air_condition">
+                <img src="./images/heating.png" />
+                <h3>HEATING</h3>
+                <p>In the winter, a heat pump reverses – it pulls heat from
+                    the outside and transfers it into your home. </p>
+                <br />
+                <p>Even at cold outdoor temperatures, air contains heat
+                    energy. The refrigerant absorbs that heat and evaporates.
+                    As in the air conditioning cycle, the refrigerant can be
+                    pressurized, which raises the temperature. As the
+                    refrigerant is pumped into the home, it warms the home
+                    until heat is extracted and it condenses back into a liquid,
+                    and the cycle continues.  </p>
+            </div>
+        </div>
+    </div>
 
     <!-- ---------------------------------footer---------------------------------- -->
     <footer>
         <div>
+            <img src="./images/footer_logo.png" alt="footer" />
             <p>© 2022 by Conduit Tech</p>
         </div>
 
