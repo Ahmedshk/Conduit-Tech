@@ -572,6 +572,7 @@ footer ul li {
         margin-bottom: 30px;
         width: 90%;
         font-weight: 600;
+        margin-top: 20px;
     }
 
     .process_section h1 {
@@ -598,7 +599,7 @@ footer ul li {
     }
 
     .estimate_annual h1 {
-        font-size: 30px;
+        font-size: 30px !important;
         font-weight: 600;
     }
 
